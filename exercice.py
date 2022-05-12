@@ -14,30 +14,30 @@ def square(a: float) -> float:
 
 def average(a: float, b: float, c: float) -> float:
     list([a,b,c])
-    return sum(list)/3
+    return sum(list) / 3
 
 
 def to_radians(angle_degs: float, angle_mins: float, angle_secs: float) -> float:
-    dd= angle_degs + angle_mins/60 + angle_secs/3600
-    r=(dd*pi)/180
+    dd= angle_degs + angle_mins / 60 + angle_secs / 3600
+    r=(dd * pi) / 180
     return r
 
 
 def to_degrees(angle_rads: float) -> tuple:
-    dd=(angle_rads*180)/pi
+    dd=(angle_rads * 180) / pi
     d=int(dd)
-    m=(dd-d)*60
-    s=(dd-d-m/60)*3600
+    m=(dd - d) * 60
+    s=(dd - d -m / 60) * 3600
     return d, m, s
 
 
 def to_celsius(temperature: float) -> float:
-    c= (f-32)/1.8
-    return 0.0
+    c = (temperature - 32) / 1.8
+    return c
 
 
 def to_farenheit(temperature: float) -> float:
-    f= temperature*1.8 + 32
+    f = temperature * 1.8 + 32
     return f
 
 
